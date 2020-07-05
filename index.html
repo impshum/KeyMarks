@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>KeyMarks</title>
+
+  <meta name='description' content='Keypad speed dial bookmarks'>
+  <link rel='stylesheet' href='assets/css/bulma.min.css'>
+  <link rel='stylesheet' href='assets/css/styles.css'>
+  <link rel='stylesheet' href='assets/css/all.css'>
+
+  <link rel="shortcut icon" type="image/png" href="assets/img/nope.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keymarks.recycledrobot.co.uk">
+  <meta property="og:title" content="KeyMarks">
+  <meta property="og:description" content="Keypad speed dial bookmarks">
+  <meta property="og:image" content="https://keymarks.recycledrobot.co.uk/assets/img/social.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  <meta property="og:logo" content="https://keymarks.recycledrobot.co.uk/assets/img/nope.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@impshum">
+  <meta name="twitter:title" content="KeyMarks">
+  <meta name="twitter:description" content="Keypad speed dial bookmarks">
+  <meta name="twitter:creator" content="@impshum">
+  <meta name="twitter:image" content="https://keymarks.recycledrobot.co.uk/assets/img/social.jpg">
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <nav class="navbar is-fixed-top is-white" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./">
+        <h1 class="is-size-5 has-text-weight-bold">KeyMarks</h1>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a id="about" class='navbar-item has-text-weight-bold'><i class='fas fa-md fa-question'></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="keys" class="section">
+    <div class="container">
+
+      <div class="columns is-centered">
+
+        <div class="column is-5">
+          <div id="keypad" class="box keypad">
+            <input id="keypad_input" class="input" disabled type="text">
+            <div class="buttons">
+              <button class="button">7</button>
+              <button class="button">8</button>
+              <button class="button">9</button>
+              <button class="button">4</button>
+              <button class="button">5</button>
+              <button class="button">6</button>
+              <button class="button">1</button>
+              <button class="button">2</button>
+              <button class="button">3</button>
+              <button class="button c">C</button>
+              <button class="button">0</button>
+              <button class="button go">GO</button>
+            </div>
+          </div>
+
+          <a id="message_link" href="">
+            <div id="message_box" class="card is-hidden">
+              <div class="card-content">
+                <article class="media">
+                  <figure class="media-left">
+                    <img id="message_logo" src="">
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <strong id="message_url"></strong>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="column is-5">
+
+          <form id="add_form">
+            <div class="field has-addons">
+              <p class="control is-expanded">
+                <input id="add_input" class="input" type="url" placeholder="https://website.com" required>
+              </p>
+              <div class="control">
+                <button type="submit" class="button is-black"><i class='fas fa-md fa-plus'></i></button>
+              </div>
+            </div>
+          </form>
+
+          <table class="table is-striped is-hoverable is-fullwidth">
+            <tbody id="legend"></tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="loading_modal" class="hero is-fullheight"></section>
+  <section id="about_modal" class="hero is-fullheight is-hidden">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          KeyMarks
+        </h1>
+        <h2 class="subtitle">
+          version 1.0
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <small><a href="https://recycledrobot.co.uk">Made by Recycled Robot with a keyboard</a></small><br>
+      <small><a href="https://clearbit.com">Logos provided by Clearbit</a></small>
+    </div>
+  </footer>
+
+  <script src='assets/js/scripts.js'></script>
+</body>
+
+</html>
